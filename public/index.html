@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethical Hacking Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">🔒 Ethical Hacking Lab</h1>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#challenges" class="nav-link">Challenges</a>
+                <a href="#leaderboard" class="nav-link">Leaderboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+            <h2>Learn Cybersecurity Through Hands-On Challenges</h2>
+            <p>Master ethical hacking skills with interactive labs and real-world scenarios</p>
+            <button class="btn btn-primary" onclick="scrollToSection('challenges')">Start Learning</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <section id="challenges" class="challenges-section">
+            <h2>Available Challenges</h2>
+            <div id="challenges-grid" class="challenges-grid"></div>
+        </section>
+
+        <section id="challenge-detail" class="challenge-detail" style="display:none;">
+            <button class="btn btn-back" onclick="backToChallenges()">← Back to Challenges</button>
+            <div id="detail-content"></div>
+        </section>
+
+        <section id="leaderboard" class="leaderboard-section">
+            <h2>Top Hackers 🏆</h2>
+            <table class="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Hacker</th>
+                        <th>Points</th>
+                        <th>Challenges Solved</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>CyberNinja</td>
+                        <td>1500</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>SecurityPro</td>
+                        <td>1200</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>HackMaster</td>
+                        <td>900</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Ethical Hacking Lab | Learn Security Responsibly</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
